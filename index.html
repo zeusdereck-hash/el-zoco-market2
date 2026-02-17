@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Zoco Market - Tu Mercado de Confianza</title>
+    <meta name="description" content="Encuentra tesoros y soluciones extraordinarias en El Zoco Market. Teléfonos, accesorios para moto, artículos para mascotas y más.">
+    <meta name="keywords" content="El Zoco, market, tienda online, teléfonos, accesorios moto, cargadores, fundas">
+    
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:title" content="El Zoco Market">
+    <meta property="og:description" content="Todo lo que buscas, en un solo lugar">
+    <meta property="og:image" content="img/estructura/ELZOCO.png">
+    <meta property="og:url" content="https://elzocomarket.com">
+    
+    <link rel="icon" type="image/png" href="img/estructura/ELZOCOfv.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Barra superior -->
+    <div class="top-bar" aria-label="Promoción destacada">
+        ✨ ¡Encuentra tesoros y soluciones extraordinarias aquí! ✨
+    </div>
+
+    <!-- Header principal -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="img/estructura/ELZOCO.png" alt="El Zoco Market Logo" width="120" height="120">
+            </div>
+            
+            <div class="header-title" aria-label="El Zoco">El Zoco</div>
+            
+            <div class="cart-container">
+                <div class="header-actions">
+                    <!-- Botón de WhatsApp -->
+                    <button class="whatsapp-bubble" onclick="elZocoApp.contactarSoporte()" aria-label="Contactar por WhatsApp" title="Atención a Clientes">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                    </button>
+
+                    <!-- Carrito de compras -->
+                    <button class="cart-icon" id="btnAbrirCarrito" aria-label="Abrir carrito de compras">
+                        <i class="fas fa-shopping-bag" aria-hidden="true"></i>
+                        <span class="cart-count" aria-label="Productos en carrito">0</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section class="hero" aria-label="Banner principal">
+        <h1>Todo lo que buscas, en un solo lugar</h1>
+    </section>
+
+    <!-- Buscador -->
+    <div class="search-container">
+        <div class="search-wrapper">
+            <input type="text" id="searchInput" placeholder="Buscar tesoros (ej: Redmi, Moto, Cargador)..." 
+                   aria-label="Buscar productos">
+            <i class="fas fa-search search-icon" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <!-- Contenido principal -->
+    <main class="container">
+        <!-- Sección Telefonía -->
+        <section aria-labelledby="telefonia-title">
+            <h2 id="telefonia-title" class="section-title">Telefonía y Smartphones</h2>
+            <div class="products-grid" id="productos-telefonia">
+                <!-- Los productos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </section>
+
+        <!-- Sección Moto Gadgets -->
+        <section aria-labelledby="moto-title">
+            <h2 id="moto-title" class="section-title">Moto Gadgets</h2>
+            <div class="products-grid" id="productos-moto">
+                <!-- Los productos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </section>
+
+        <!-- Sección Mascotas y Hogar -->
+        <section aria-labelledby="hogar-title">
+            <h2 id="hogar-title" class="section-title">Mascotas y Hogar</h2>
+            <div class="products-grid" id="productos-hogar">
+                <!-- Los productos se cargarán dinámicamente con JavaScript -->
+            </div>
+        </section>
+
+        <!-- Sección Testimonios -->
+        <section aria-labelledby="testimonios-title" class="testimonios-section">
+            <h2 id="testimonios-title" class="section-title" style="text-align: center; display: block;">Lo que dicen nuestros clientes</h2>
+            
+            <div class="testimonios-grid">
+                <article class="testimonio-card">
+                    <div class="stars" aria-label="Calificación: 5 estrellas">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="testimonio-texto">"La pantalla BEPOCAM superó mis expectativas. La instalación fue súper sencilla y la atención por WhatsApp fue inmediata."</p>
+                    <h4 class="testimonio-autor">- Ricardo M. (Conductor de Didi)</h4>
+                </article>
+
+                <article class="testimonio-card">
+                    <div class="stars" aria-label="Calificación: 5 estrellas">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="testimonio-texto">"El intercomunicador Q58 tiene un audio increíble. Por fin puedo escuchar música y el GPS sin ruidos extraños en carretera."</p>
+                    <h4 class="testimonio-autor">- Sofía G.</h4>
+                </article>
+
+                <article class="testimonio-card">
+                    <div class="stars" aria-label="Calificación: 5 estrellas">
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                        <i class="fas fa-star" aria-hidden="true"></i>
+                    </div>
+                    <p class="testimonio-texto">"Compré la funda de asientos para mi perro y el material es muy resistente. Entrega puntual en el punto medio acordado."</p>
+                    <h4 class="testimonio-autor">- Carlos P.</h4>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- ========== MODALES ========== -->
+
+    <!-- Modal Carrito -->
+    <div class="modal" id="modalCarrito" role="dialog" aria-modal="true" aria-label="Carrito de compras">
+        <div class="modal-content">
+            <button class="close-btn" onclick="elZocoApp.cerrarModales()" aria-label="Cerrar carrito">&times;</button>
+            <h2>Tu Carrito</h2>
+
+            <div id="listaItems" class="cart-items-list" role="list"></div>
+            
+            <h3 id="textoTotal" class="total-text">Total: $0.00</h3>
+
+            <button class="empty-cart-btn" onclick="elZocoApp.vaciarCarrito()" aria-label="Vaciar carrito">
+                <i class="fas fa-trash-alt" aria-hidden="true"></i> Vaciar Carrito
+            </button>
+
+            <button class="btn-pagar-carrito" onclick="elZocoApp.abrirEnvio()" aria-label="Continuar con datos de envío">
+                Siguiente: Datos de Envío <i class="fas fa-truck" aria-hidden="true"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal Envío -->
+    <div class="modal" id="modalEnvio" role="dialog" aria-modal="true" aria-label="Datos de envío">
+        <div class="modal-content">
+            <button class="close-btn" onclick="elZocoApp.cerrarModales()" aria-label="Cerrar">&times;</button>
+            <h2>Datos de Entrega</h2>
+            
+            <form id="formEnvio" onsubmit="event.preventDefault(); elZocoApp.pasarAPago();">
+                <div class="form-group">
+                    <label for="inputNombreEnvio">Nombre Completo:</label>
+                    <input type="text" id="inputNombreEnvio" placeholder="¿A quién entregamos?" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputDireccion">Dirección Completa:</label>
+                    <textarea id="inputDireccion" placeholder="Ej: Av. Juárez #123, Col. Centro, CP 06000, CDMX" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputTel">Teléfono de contacto:</label>
+                    <input type="tel" id="inputTel" placeholder="10 dígitos" pattern="[0-9]{10}" required>
+                </div>
+
+                <button type="submit" class="btn-pagar-carrito">
+                    Continuar al Pago <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal Pago -->
+    <div class="modal" id="modalPago" role="dialog" aria-modal="true" aria-label="Finalizar pago">
+        <div class="modal-content modal-pago">
+            <button class="close-btn" onclick="elZocoApp.cerrarModales()" aria-label="Cerrar">&times;</button>
+            <h2>Finalizar Pago</h2>
+            
+            <div class="qr-container">
+                <p class="qr-label">
+                    <i class="fab fa-paypal" aria-hidden="true"></i> Escanea para pagar con PayPal
+                </p>
+                <img src="img/estructura/elzocopay.jpeg" alt="Código QR para pago con PayPal" class="qr-image" loading="lazy">
+            </div>
+
+            <div class="bank-details">
+                <p><strong>Banco:</strong> MERCADO PAGO</p>
+                <p><strong>No. de Tarjeta:</strong> 5428780110025319</p>
+                <p><strong>CLABE:</strong> 7229 6901 0757 9208 39</p>
+                <p><strong>Link Mercado Pago:</strong> <a href="https://link.mercadopago.com.mx/elzocodis" target="_blank" rel="noopener noreferrer">Pagar aquí</a></p>
+                <p><strong>Referencia DIMO:</strong> 5580867149</p>
+                <p class="titular"><strong>Titular:</strong> Oscar Arturo Marquez Cruz</p>
+            </div>
+
+            <button class="whatsapp-btn" onclick="elZocoApp.enviarPedido()" aria-label="Confirmar pedido por WhatsApp">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i> Confirmar y enviar comprobante
+            </button>
+        </div>
+    </div>
+
+    <!-- Modal Detalles del Producto -->
+    <div class="modal" id="modalDetalles" role="dialog" aria-modal="true" aria-label="Detalles del producto">
+        <div class="modal-content modal-detalles">
+            <button class="close-btn" onclick="elZocoApp.cerrarModales()" aria-label="Cerrar">&times;</button>
+            <img id="detallesImg" src="" alt="" class="detalles-img">
+            <div class="miniaturas-container" id="miniaturasContainer"></div>
+            <h2 id="detallesNombre"></h2>
+            <p id="detallesDesc" class="detalles-desc"></p>
+            <h3 id="detallesPrecio" class="detalles-precio"></h3>
+            <button id="btnAgregarDesdeDetalle" class="btn-pagar-carrito" aria-label="Añadir al carrito">
+                <i class="fas fa-cart-plus" aria-hidden="true"></i> Añadir al Carrito
+            </button>
+        </div>
+    </div>
+    <!-- ========== MODALES DE POLÍTICAS ========== -->
+
+<!-- Modal Políticas de Envío -->
+<div class="modal" id="modalEnvioPoliticas" role="dialog" aria-modal="true" aria-label="Políticas de envío">
+    <div class="modal-content modal-politicas">
+        <button class="close-btn" onclick="elZocoApp.cerrarModales()" aria-label="Cerrar">&times;</button>
+        <h2>📦 Políticas de Envío</h2>
+        
+        <div class="politicas-content">
+            <h3>1. Cobertura</h3>
+            <p>Realizamos envíos a <strong>todo México</strong> a través de paqueterías confiables.</p>
+            
+            <h3>2. Tiempos de entrega</h3>
+            <ul>
+                <li><strong>Ciudades principales:</strong> 2-4 días hábiles</li>
+                <li><strong>Zonas metropolitanas:</strong> 3-5 días hábiles</li>
+                <li><strong>Áreas rurales:</strong> 5-7 días hábiles</li>
+            </ul>
+            
+            <h3>3. Costos de envío</h3>
+            <ul>
+                <li><strong>Envío estándar:</strong> $99 MXN</li>
+                <li><strong>Envío GRATIS:</strong> En compras mayores a $999 MXN</li>
+            </ul>
+            
+            <h3>4. Seguimiento</h3>
+            <p>Compartimos número de guía por WhatsApp al momento del envío.</p>
+        </div>
+        
+        <button class="btn-cerrar-politicas" onclick="elZocoApp.cerrarModales()">Cerrar</button>
+    </div>
+</div>
+
+<!-- Modal Políticas de Devoluciones -->
+<div class="modal" id="modalDevoluciones" role="dialog" aria-modal="true" aria-label="Políticas de devoluciones">
+    <div class="modal-content modal-politicas">
+        <button class="close-btn" onclick="elZocoApp.cerrarModales()" aria-label="Cerrar">&times;</button>
+        <h2>🔄 Políticas de Devoluciones</h2>
+        
+        <div class="politicas-content">
+            <h3>1. Plazo</h3>
+            <p>Hasta <strong>7 días naturales</strong> después de recibir tu producto.</p>
+            
+            <h3>2. Condiciones</h3>
+            <ul>
+                <li>✅ Producto en empaque original</li>
+                <li>✅ Sin señales de uso</li>
+                <li>✅ Incluir todos los accesorios</li>
+            </ul>
+            
+            <h3>3. Proceso</h3>
+            <ol>
+                <li>Contacta por WhatsApp al 55 5808 67149</li>
+                <li>Proporciona número de pedido y motivo</li>
+                <li>Te enviaremos guía de devolución (si aplica)</li>
+            </ol>
+        </div>
+        
+        <button class="btn-cerrar-politicas" onclick="elZocoApp.cerrarModales()">Cerrar</button>
+    </div>
+</div>
+
+    <!-- Botón flotante para compartir -->
+    <button class="share-float" onclick="elZocoApp.compartirPagina()" aria-label="Compartir esta página">
+        <div class="share-button">
+            <i class="fas fa-share-alt" aria-hidden="true"></i>
+        </div>
+    </button>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <img src="img/estructura/ELZOCO.png" alt="El Zoco Market Logo" class="footer-logo" loading="lazy">
+            <h3 class="footer-title">El Zoco Market</h3>
+            <p class="footer-description">Tu mercado de confianza para encontrar tesoros y soluciones extraordinarias.</p>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/19WXAYatpK/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+                    <i class="fab fa-facebook" aria-hidden="true"></i> Facebook
+                </a>
+                <a href="https://www.instagram.com/el.zoco.service?igsh=aGh3dWs0dXFkaGlk" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                    <i class="fab fa-instagram" aria-hidden="true"></i> Instagram
+                </a>
+                <a href="https://wa.me/525580867149" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp" aria-hidden="true"></i> Soporte
+                </a>
+            </div>
+            <div class="footer-politicas">
+            <button class="btn-politica" onclick="elZocoApp.abrirModal('modalEnvioPoliticas')">
+                📦 Políticas de Envío
+            </button>
+            <button class="btn-politica" onclick="elZocoApp.abrirModal('modalDevoluciones')">
+                🔄 Políticas de Devoluciones
+            </button>
+        </div>
+            
+            <hr class="footer-divider">
+            <p class="copyright">&copy; 2005 El Zoco Market - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="js/productos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
